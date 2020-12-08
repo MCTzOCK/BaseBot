@@ -5,5 +5,22 @@
 
 package de.mctzock.basebot.main;
 
+import de.mctzock.basebot.bot.Bot;
+import de.mctzock.basebot.bot.commands.ListCommand;
+
 public class Main {
+
+    public static void main(String[] args) {
+        Bot b = new Bot("BaseBot", "Ben Siebert", "1.0", "b!");
+        b.registerCommand("list", new ListCommand());
+
+        Runtime.getRuntime().addShutdownHook(new Thread(){
+
+            @Override
+            public void run() {
+                System.out.println("Exited!");
+                super.run();
+            }
+        });
+    }
 }
