@@ -2,6 +2,10 @@
 
 BaseBot is a self hosted Discord Bot with plugin support.
 
+# Building
+
+Just use ``mvn clean install``
+
 # WARNING
 
 This project was just started on 08.12.2020 so it isn't finished yet!
