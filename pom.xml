@@ -41,6 +41,11 @@
                     </execution>
                 </executions>
                 <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>de.mctzock.basebot.main.Main</mainClass>
+                        </manifest>
+                    </archive>
                     <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
